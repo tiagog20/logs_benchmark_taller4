@@ -44,11 +44,11 @@ El objetivo fue evaluar **tiempo de ejecución**, **uso de CPU** y **consumo de 
 
 ## 🔍 Análisis Resumido
 
-- **DuckDB** achieved the best total processing time, leveraging an **in-memory vectorized engine** with efficient parallelism.  
-- **Polars** followed very closely, showing almost identical performance, with excellent **memory efficiency** and **columnar execution**.  
-- **Spark** provided good relative performance and strong **distributed scalability**, though with higher overhead and resource consumption.  
-- **Pure Python** was significantly slower, processing data **line by line** without vectorization or concurrency.  
-- **Pandas** was the **slowest**, limited by **single-threaded execution** and high memory usage.
+DuckDB logró el mejor tiempo de procesamiento total, aprovechando un motor vectorizado en memoria con un paralelismo eficiente.
+Polars le siguió muy de cerca, mostrando un rendimiento casi idéntico, con una excelente eficiencia de memoria y ejecución columnar.
+Spark proporcionó un buen rendimiento relativo y una gran escalabilidad distribuida, aunque con una mayor sobrecarga y consumo de recursos.
+Pure Python fue significativamente más lento, procesando los datos línea por línea sin vectorización ni concurrencia.
+Pandas fue el más lento, limitado por la ejecución de un solo subproceso y el alto uso de memoria.
 
 ---
 
